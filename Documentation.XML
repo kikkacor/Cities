@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WeatherExercise</name>
+    </assembly>
+    <members>
+        <member name="F:WeatherExercise.BusinessUtilities.AccessToken">
+            <summary>
+            Token to access website APIs.
+            </summary>
+        </member>
+        <member name="M:WeatherExercise.BusinessUtilities.#ctor">
+            <summary>
+            Empty ctor.
+            </summary>
+        </member>
+        <member name="M:WeatherExercise.BusinessUtilities.GetBusinesses(System.String)">
+            <summary>
+            Method to make GET request to web API on local businesses.
+            </summary>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WeatherExercise.Controllers.WeatherByCityController.#ctor(Microsoft.Extensions.Logging.ILogger{WeatherExercise.Controllers.WeatherByCityController})">
+            <summary>
+            Constructor to initialize logger and utilities.
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WeatherExercise.Controllers.WeatherByCityController.getWeather">
+            <summary>
+            Starting resource of the App.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WeatherExercise.Controllers.WeatherByCityController.getWeatherByCity(System.String)">
+            <summary>
+            Returns information about a city, invoking separate GET requests.
+            </summary>
+            <param name="city">Name of the city to investigate on.</param>
+            <returns></returns>
+        </member>
+        <member name="F:WeatherExercise.WeatherUtilities.AccessToken">
+            <summary>
+            Token to access website APIs.
+            </summary>
+        </member>
+        <member name="M:WeatherExercise.WeatherUtilities.#ctor">
+            <summary>
+            Empty ctor.
+            </summary>
+        </member>
+        <member name="M:WeatherExercise.WeatherUtilities.GetWeather(System.String)">
+            <summary>
+            Method to make GET request to web API on local weather.
+            </summary>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

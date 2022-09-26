@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WeatherExercise</name>
+    </assembly>
+    <members>
+        <member name="T:WeatherExercise.BusinessUtilities">
+            <summary>
+            Contains GET request to YELP and configuration to get businesses of cities
+            </summary>
+        </member>
+        <member name="F:WeatherExercise.BusinessUtilities.AccessToken">
+            <summary>
+            Token to access website APIs.
+            </summary>
+        </member>
+        <member name="M:WeatherExercise.BusinessUtilities.GetBusinesses(System.String)">
+            <summary>
+            Method to make GET request to web API on local businesses.
+            </summary>
+            <param name="city"></param>
+            <returns>Model object filled with info read from json</returns>
+        </member>
+        <member name="T:WeatherExercise.CityGetResultObject">
+            <summary>
+            Container for model result from get requests
+            </summary>
+        </member>
+        <member name="M:WeatherExercise.CityGetResultObject.#ctor(WeatherExercise.CityWeather,WeatherExercise.CityBusinesses)">
+            <summary>
+            Constructor for the final model filled result
+            </summary>
+            <param name="weather"></param>
+            <param name="businesses"></param>
+        </member>
+        <member name="T:WeatherExercise.Controllers.WeatherByCityController">
+            <summary>
+            Controller to invoke requests, invokes utility classes.
+            </summary>
+        </member>
+        <member name="M:WeatherExercise.Controllers.WeatherByCityController.#ctor">
+            <summary>
+            Constructor to initialize utilities and model
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WeatherExercise.Controllers.WeatherByCityController.getWeather">
+            <summary>
+            Starting resource of the App; doesn't need parameters.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WeatherExercise.Controllers.WeatherByCityController.getWeatherByCity(System.String)">
+            <summary>
+            Returns information about a city, invoking GET requests.
+            </summary>
+            <param name="city">Name of the city to investigate on.</param>
+            <returns></returns>
+        </member>
+        <member name="T:WeatherExercise.WeatherUtilities">
+            <summary>
+            Contains GET request to openWeatherMap and configuration to get Weather of cities
+            </summary>
+        </member>
+        <member name="F:WeatherExercise.WeatherUtilities.AccessToken">
+            <summary>
+            Token to access website APIs.
+            </summary>
+        </member>
+        <member name="M:WeatherExercise.WeatherUtilities.GetWeather(System.String)">
+            <summary>
+            Method to make GET request to web API on local weather.
+            </summary>
+            <param name="city"></param>
+            <returns>Model object filled with info read from json</returns>
+        </member>
+    </members>
+</doc>
